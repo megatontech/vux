@@ -69,6 +69,7 @@ import ButtonTab from './demos/Button-tab'
 import ScrollerSwiper from './demos/Scroller-swiper'
 import Qrcode from './demos/Qrcode'
 import Badge from './demos/Badge'
+import XForm from './demos/X-form'
 
 const FastClick = require('fastclick')
 FastClick.attach(document.body)
@@ -279,6 +280,9 @@ router.map({
   },
   '/component/badge': {
     component: Badge
+  },
+  '/component/x-form': {
+    component: XForm
   }
 })
 

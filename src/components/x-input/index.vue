@@ -19,6 +19,8 @@
 
 <script>
 import Base from '../../libs/base'
+import XForm from '../../libs/mixin_form'
+
 import Icon from '../icon'
 import InlineDesc from '../inline-desc'
 
@@ -58,12 +60,13 @@ export default {
       this.type = 'email'
     }
   },
-  mixins: [Base],
+  mixins: [Base, XForm],
   components: {
     Icon,
     InlineDesc
   },
   props: {
+    name: String,
     title: {
       type: String,
       default: ''
